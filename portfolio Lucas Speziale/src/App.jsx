@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import perfil from './assets/perfil.jpg'
 import Minga from './assets/Minga.png'
-import Home from './assets/Home Essentials.jpg'
+import Home from './assets/home.jpg'
 import Night from './assets/NIGHT2.jpg'
 
 function App() {
@@ -47,6 +47,27 @@ host:'https://minga-amarillo-front-32oe-cu5utv4jw-zerhiz.vercel.app/'
         </p>
         <h4 className='text-2xl font-sans text-center p-6 text-white font-light '>Aquí debajo, encontrarás algunos de mis proyectos realizados</h4>
      </div>
+     <ul>
+      {proyects.map((proyect, i)=>(
+        <li key={i}
+        style={{backgroundImage:`url(${proyect.image})`}}
+        role='button'
+        className={active === i ? 'active' : ''}
+        onClick={()=>setActive(i)}
+        >
+          <h3 className='text-white'>{proyect.name}</h3>
+          <div className='section-content'>
+            <div className='inner'>
+              <div className='bio'>
+                    <h2>{proyect.name}</h2>
+                    <p className='text-white text-xl'>{proyect.description}</p>     
+              </div>
+            <a href={proyect.host} className='text-black text-xl bg-white border rounded-md' >Visitar</a>
+            </div>
+          </div>
+        </li>
+      ))}
+     </ul>
     </>
   )
 }
