@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <div className="flex justify-center items-center p-12">
-        <img src={perfil} alt="" class="rounded-full w-64 h-64" />
+        <img src={perfil} alt="" class="rounded-full w-44 h-44" />
         <h1 className="text-4xl font-sans text-center p-6 text-white font-light flex-col">
           ¡Hola! Soy Lucas Speziale, Desarrollador Full Stack y estudiante de
           Licenciatura en Sistemas, y este es mi portfolio
@@ -51,7 +51,7 @@ function App() {
           Aquí debajo, encontrarás algunos de mis proyectos realizados
         </h4>
       </div>
-      <ul>
+      <ul className="p-2">
         {proyects.map((proyect, i) => (
           <li
             key={i}
@@ -78,12 +78,9 @@ function App() {
           </li>
         ))}
       </ul>
-
-
-
-
-
-      
+      <div className="bg-white p-4">
+        <h4 className="text-3xl">Estas son mis redes</h4>
+      </div>
     </>
   );
 }

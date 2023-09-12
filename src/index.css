@@ -13,8 +13,8 @@
 }
 ul{
   display: flex;
-  min-height: 750px;
-  height: 100vh;
+  min-height: 500px;
+  height: 50vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -31,7 +31,7 @@ ul{
 }
 
 li{
-  flex: 0.5;
+  flex: 1;
   display: flex;
   align-items: stretch;
   cursor: pointer;
@@ -138,6 +138,7 @@ h3{
   opacity: 0;
   transition: opacity 0.25s ease-out;
   background-color: white;
+  
 
 }
 
