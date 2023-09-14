@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+
 import perfil from "./assets/perfil.jpg";
 import Minga from "./assets/Minga.png";
 import Home from "./assets/home.jpg";
@@ -34,8 +35,8 @@ function App() {
   return (
     <>
       <div className="flex justify-center items-center p-12">
-        <img src={perfil} alt="" class="rounded-full w-64 h-64" />
-        <h1 className="text-4xl font-sans text-center p-6 text-white font-light flex-col">
+        <img src={perfil} alt="" className="rounded-full w-64 h-64" />
+        <h1 className="text-4xl text-black text-center p-6 text-white font-light flex-col">
           ¡Hola! Soy Lucas Speziale, Desarrollador Full Stack y estudiante de
           Licenciatura en Sistemas, y este es mi portfolio
         </h1>
